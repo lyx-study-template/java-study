@@ -14,9 +14,13 @@ repositories
 
 dependencies
 {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22' // https://mvnrepository.com/artifact/org.projectlombok/lombok
     implementation group: 'cn.hutool', name: 'hutool-all', version: '5.7.17' // https://mvnrepository.com/artifact/cn.hutool/hutool-all
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '7.0.2.Final' // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+    implementation group: 'org.apache.tomcat', name: 'tomcat-jasper-el', version: '10.1.0-M8' // https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el
+
 }
 
 test
